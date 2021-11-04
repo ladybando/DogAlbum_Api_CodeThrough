@@ -22,4 +22,9 @@ class DogViewModel : ViewModel() {
         }
     }
 
+    fun getPhotoByBreed(breedType: String?) {
+        viewModelScope.launch {
+            _dogPhoto.value =  DogPhotoApi.retrofitService.getPhotoByBreed(breedType!!)
+        }
+    }
 }
