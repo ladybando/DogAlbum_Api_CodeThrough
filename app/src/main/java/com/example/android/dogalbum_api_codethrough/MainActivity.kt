@@ -13,6 +13,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+    /**
+     * Inflates the layout with View Binding, and calls [getRandomDogPhoto] method.
+     */
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         getRandomDogPhoto()
@@ -20,10 +24,13 @@ class MainActivity : AppCompatActivity() {
     fun getRandomDogPhoto() {
         val randomPhotoButton = binding.button
 
+        /*Observes dogPhoto from View Model and uses the Coil library
+        * to load an image into an [ImageView].*/
         viewModel.dogPhoto.observe(this, {
             val imgUri = it.imageUrl!!.toUri().buildUpon().scheme("https").build()
             binding.imageView.load(imgUri)
         })
+        /* Calls [getNewPhoto] method from View Model when [Button] is selected.*/
         randomPhotoButton.setOnClickListener {
             viewModel.getNewPhoto()
         }
