@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ayana/AndroidStudioProjects/DogAlbum_Api_CodeThrough/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/ayana/AndroidStudioProjects/DogAlbum_Api_CodeThrough/app/src/main/res/layout/fragment_dog_photo_layout.xml" value="0.1171875" />
+        <entry key="..\:/Users/ayana/AndroidStudioProjects/DogAlbum_Api_CodeThrough/app/src/main/res/layout/fragment_dog_photo_list.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/ayana/AndroidStudioProjects/DogAlbum_Api_CodeThrough/app/src/main/res/layout/fragment_dogs_photo_list.xml" value="0.1171875" />
       </map>
     </option>
   </component>

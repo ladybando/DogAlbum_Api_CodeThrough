@@ -1,4 +1,4 @@
-package com.example.android.dogalbum_api_codethrough
+package com.example.android.dogalbum_api_codethrough.model
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
