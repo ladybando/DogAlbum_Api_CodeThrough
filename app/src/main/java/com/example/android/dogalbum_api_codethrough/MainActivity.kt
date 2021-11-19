@@ -18,7 +18,6 @@ import com.example.android.dogalbum_api_codethrough.model.DogViewModel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var navController: NavController
     private val viewModel: DogViewModel by viewModels()
     private lateinit var searchView: SearchView
 
@@ -26,16 +25,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val navHostFragment = supportFragmentManager
-            .findFragmentById(R.id.dog_display_container) as NavHostFragment
-        navController = navHostFragment.navController
-
-        setupActionBarWithNavController(navController)
     }
-    override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp() || super.onSupportNavigateUp()
-    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.options_menu, menu)
 
@@ -57,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 viewModel.getPhotoByBreed(userQuery)
                 return true
             }
-            override fun onQueryTextChange(p0: String?): Boolean {
+            override fun onQueryTextChange(userInput: String?): Boolean {
                 return false
             }
         })
