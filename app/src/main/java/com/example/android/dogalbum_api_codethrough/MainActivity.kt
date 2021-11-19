@@ -63,13 +63,5 @@ class MainActivity : AppCompatActivity() {
         })
         return true
     }
-    override fun onOptionsItemSelected(item: MenuItem) = when(item.itemId) {
-        R.id.favorite -> {
-            Log.i("MainActivity", "Favorites clicked!")
-            true
-        }
-        else ->{
-            super.onOptionsItemSelected(item)
-        }
-    }
+
 }
