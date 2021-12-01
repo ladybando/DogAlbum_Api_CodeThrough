@@ -12,7 +12,7 @@ import com.example.android.dogalbum_api_codethrough.model.DogViewModel
 /**
  * A fragment representing a list of Items.
  */
-class DogPhotoFragment : Fragment() {
+class DogPhotoListFragment : Fragment() {
 
     private var _binding: FragmentDogPhotoListBinding? = null
     private val binding get() = _binding!!
