@@ -16,3 +16,7 @@ This project is a single screen app that simply cycles through random dog pictur
 1. Install Android Studio, if you don't already have it.
 2. Follow the steps in the [Codethrough](https://cipherlaunch.wordpress.com/2021/11/03/dog-album-android-project-part-2/), prior to downloading this code.
 3. Practice, practice, practice.
+
+# Demo
+
+![DogDemo](https://github.com/ladybando/DogAlbum_Api_CodeThrough/blob/image_with_rooms/app/demo/DoggiesBasic.gif)
